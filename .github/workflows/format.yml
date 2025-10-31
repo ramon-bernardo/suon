@@ -1,4 +1,4 @@
-name: Format check
+name: Format
 
 on:
   push:
@@ -8,10 +8,13 @@ on:
 
 jobs:
   format:
+    name: Check code formatting
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
       - uses: dtolnay/rust-toolchain@stable
         with:
           components: rustfmt
-      - run: cargo fmt --all -- --check
+
+      - name: Run rustfmt
+        run: cargo fmt --all -- --check

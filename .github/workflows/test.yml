@@ -8,6 +8,7 @@ on:
 
 jobs:
   test:
+    name: Running unit test on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -15,4 +16,6 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - uses: dtolnay/rust-toolchain@stable
-      - run: cargo test --verbose
+
+      - name: Run tests
+        run: cargo test --verbose
