@@ -22,8 +22,3 @@ jobs:
         run: |
           echo 'To automatically fix typos, run: `typos -w`'
           echo 'To see a diff of typos, run: `typos`'
-          echo 'Learn more about Typos here: https://crates.io/crates/typos'
-          echo 'If you use VSCode, you can also install the "Typos Spell Checker" extension'
-          echo 'Find the VSCode extension here: https://marketplace.visualstudio.com/items?itemName=tekumara.typos-vscode'
-
-

@@ -26,6 +26,3 @@ jobs:
         run: |
           echo 'To format TOML files, run: `taplo fmt`'
           echo 'To check for formatting differences, run: `taplo fmt --check --diff`'
-          echo 'Learn more about Taplo here: https://taplo.tamasfe.dev/'
-          echo 'If you use VSCode, install the "Even Better TOML" extension'
-          echo 'Find the VSCode extension here: https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml'
